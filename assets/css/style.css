@@ -27,7 +27,7 @@ Table Of Contents:
 	--tertiary: #990606 ;
 	--gradient: linear-gradient(to right, #f7ff6e, #f95519);
 }
-html, body {width: auto!important; overflow-x: hidden!important} 
+html, body {width: auto!important; overflow-x: hidden!important; padding-top: 50px ;} 
 
 /* Remove once you add other sections.*/
 h1,
@@ -37,6 +37,11 @@ h4,
 h5,
 h6 {
 	font-family: "samurai", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.opensans {
+  font-family: "Open Sans", sans-serif;
 }
 
 @font-face {
@@ -53,12 +58,19 @@ button {
 	font-family: sans-serif;
 }
 
-p,
+p {
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans Regular;
+	font-size: 20px;
+}
+
 ul,
 h4 {
 	margin: 0;
 	padding: 0;
 }
+
 
 a {
 	color: white;
@@ -447,7 +459,7 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 	border-image-slice: 1;
 	border-width: 2px;
 	border-image-source: var(--gradient);
-	box-shadow: 5px 5px 0px 0px #f7ff6e;
+	box-shadow: 5px 5px 0px 0px #CA1414;
 	display:flex;
 }
 
@@ -792,6 +804,9 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 }
 
 @media only screen and (max-width: 540px) {
+
+	body {padding-top: 20px ;}
+
 	.home{
 		background: url(../images/alt-banner.png);
 		background-position: center center;
