@@ -27,6 +27,7 @@ Table Of Contents:
 	--tertiary: #990606 ;
 	--gradient: linear-gradient(to right, #f7ff6e, #f95519);
 }
+html, body {width: auto!important; overflow-x: hidden!important} 
 
 /* Remove once you add other sections.*/
 h1,
@@ -122,6 +123,10 @@ li {
 
 .team {
 	color:white;
+}
+
+.choose2 img {
+	width:100%;
 }
 
 /* Gradient Border And Background On Icons */
@@ -421,6 +426,21 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 }
 
 .services .card:hover {
+	border: 10px solid;
+	transform: scale(1.01);
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: var(--gradient);
+	box-shadow: 5px 5px 0px 0px #f7ff6e;
+}
+
+.choose2 .card {
+	padding: 20px;
+	border-radius: 0;
+	border: 2px solid white;
+}
+
+.choose2 .card:hover {
 	border: 10px solid;
 	transform: scale(1.01);
 	border-image-slice: 1;
@@ -778,6 +798,7 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		height: 850px;
 	}
 
+
 	.shinobi {
 		background: url(../images/small_shinobi.png);
 		background-position: center center;
@@ -789,15 +810,10 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		top: 4.75rem; 
 	}
 
-	.choose2 img {
-		max-width: 400px;
-		max-height: 400px;
-	}
 	.navbar .logo-image img {
 		width: 100px;
 		height: 47px;
-		
-	padding: 0px 10px 0px 10px;
+		padding: 0px 10px 0px 10px;
 	}
 
 	h1 {
