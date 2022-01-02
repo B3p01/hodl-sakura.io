@@ -79,8 +79,9 @@ li {
 	position: relative;
 }
 
-.about {
-	height: 60vh;
+.about,
+.shinobi {
+	height: 80vh;
 	position: relative;
 }
 
@@ -96,6 +97,10 @@ li {
 .testimonial,
 .footer {
   	background-color: var(--primary);
+}
+
+.faq {
+	background-color: var(--secondary);
 }
 
 .about,
@@ -302,6 +307,11 @@ li {
 	font-size: 0.75rem;
 	padding: 0px;
 	margin: 0px 0px 60px 0px;
+}
+.shinobi {
+	background: url(../images/Full_Width_Shinobi.png);
+	background-size: cover;
+	
 }
 
 /* 
@@ -665,6 +675,8 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 }
 
 @media (min-width: 992px) {
+
+	
 	
 	.slider-1 .swiper-container {
 		width: 92%;
@@ -746,11 +758,25 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 	}
 }
 
-
+@media only screen and (max-width: 992px) {
+	.shinobi {
+		background: url(../images/med_width_shinobi.png);
+		background-position: center center;
+		background-size: cover;
+		text-align: center;
+	}
+}
 
 @media only screen and (max-width: 540px) {
 	.home{
 		background: url(../images/alt-banner.png);
+		background-position: center center;
+		background-size: cover;
+		text-align: center;
+	}
+
+	.shinobi {
+		background: url(../images/small_shinobi.png);
 		background-position: center center;
 		background-size: cover;
 		text-align: center;
