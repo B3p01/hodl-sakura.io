@@ -778,7 +778,11 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		text-align: center;
 		background-attachment: fixed;
 		height: 850px;
+		width: 100%;
+		background-repeat: no-repeat;
 	}
+
+  
 
 	.shinobi {
 		background: url(../images/small_shinobi.png);
