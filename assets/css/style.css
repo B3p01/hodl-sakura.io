@@ -29,10 +29,6 @@ Table Of Contents:
 }
 
 /* Remove once you add other sections.*/
-body {
-	overflow-y:hidden;
-}
-
 h1,
 h2,
 h3,
@@ -74,26 +70,39 @@ li {
 
 /* Section Background */
 .home,
-.about,
 .services,
 .plans,
 .work,
-.contact {
+.team,
+.choose2 {
 	height: 110vh;
+	position: relative;
+}
+
+.about {
+	height: 60vh;
+	position: relative;
+}
+
+
+.choose {
+	height: 20vh;
 	position: relative;
 }
 
 .services,
 .work,
-.contact,
+.choose2,
 .testimonial,
 .footer {
   	background-color: var(--primary);
 }
 
 .about,
+.choose,
 .plans,
 .company,
+.team,
 .newsletter,
 .location {
   	background-color: var(--primary-light);
@@ -101,6 +110,10 @@ li {
 
 .bottom {
   	background-color: black;
+}
+
+.team {
+	color:white;
 }
 
 /* Gradient Border And Background On Icons */
@@ -144,7 +157,7 @@ li {
 	font-weight: 500;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
-	background-color: transparent;
+	background-color: var(--secondary);
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 }
 
@@ -154,8 +167,9 @@ li {
 }
 
 .navbar .logo-image img {
-	width: 200px;
-	height: 60px;
+	width: 150px;
+	height: 71px;
+	padding: 0px 20px 0px 20px;
 }
 
 .navbar .logo-text {
@@ -169,7 +183,7 @@ li {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 2.75rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 5.75rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -177,7 +191,7 @@ li {
 	visibility: hidden;
 	padding-right: 1rem;
 	padding-left: 1rem;
-	background-color: var(--primary);
+	background-color: var(--primary-light);
 	transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 
@@ -195,7 +209,7 @@ li {
 	border: none;
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
-	background-color: var(--primary);
+	background-color: var(--primary-light);
 }
 
 .navbar .dropdown-item {
@@ -209,7 +223,7 @@ li {
 }
 
 .navbar .dropdown-item:hover {
-  	background-color: var(--primary);
+  	background-color: var(--tertiary);
 }
 
 .navbar .dropdown-divider {
@@ -636,11 +650,15 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 /*     Media Queries     */
 /*************************/
 @media only screen and (max-width: 1024px) {
+	.home,
+	.about,
+	.roadmap,
+	.choose,
+	.choose2,
+	.team,
 	.services,
 	.work,
 	.testimonial,
-	.about,
-	.contact,
 	.plans {
 		height: 100%;
 	}
@@ -668,14 +686,14 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 	.navbar {
 		box-shadow: none;
 		transition: all 0.2s;
-		padding-top: 1.75rem;
-		background-color: transparent;
+		padding-top: 1rem;
+		background-color:  var(--tertiary);
 	}
 
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: var(--primary);
+		background-color: var(--tertiary);
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 	}
 
@@ -687,10 +705,12 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		width: auto;
 		padding-right: 0;
 		padding-left: 0;
-		background-color: transparent;
+		background-color: var(--tertiary);
 		overflow-y: visible;
 		visibility: visible;
 	}
+
+
 
 	.offcanvas-collapse.open {
 		transform: none;
@@ -726,6 +746,8 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 	}
 }
 
+
+
 @media only screen and (max-width: 540px) {
 	.home{
 		background: url(../images/alt-banner.png);
@@ -734,9 +756,19 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		text-align: center;
 	}
 
+	.offcanvas-collapse {
+		top: 4rem; 
+	}
+
+	.choose2 img {
+		max-width: 400px;
+		max-height: 400px;
+	}
 	.navbar .logo-image img {
-		width: 162px;
-		height: 96px;
+		width: 100px;
+		height: 47px;
+		
+	padding: 0px 10px 0px 10px;
 	}
 
 	h1 {
