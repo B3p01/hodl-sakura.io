@@ -79,7 +79,10 @@ li {
 	position: relative;
 }
 
-.about,
+.about {
+	height: 50vh;
+	position:relative;
+}
 .shinobi {
 	height: 80vh;
 	position: relative;
