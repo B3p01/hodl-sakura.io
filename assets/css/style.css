@@ -294,7 +294,6 @@ li {
 /****************/
 .home {
 	text-align: right;
-    overflow: hidden;
 	background: url(../images/banner-bg.png);
     /*background: #000851;  /* fallback colour. Make sure this is just one solid colour. 
     background: -webkit-linear-gradient(rgba(153, 6, 6, 0.8), rgba(202, 20, 20, 0.8)), url(../images/banner-bg.) no-repeat center;
@@ -773,6 +772,8 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		background-position: center center;
 		background-size: cover;
 		text-align: center;
+		background-attachment: fixed;
+		height: 850px;
 	}
 
 	.shinobi {
