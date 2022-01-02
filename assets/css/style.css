@@ -438,15 +438,17 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 	padding: 20px;
 	border-radius: 0;
 	border: 2px solid white;
+	display:flex;
 }
 
 .choose2 .card:hover {
-	border: 10px solid;
+	border: 0px;
 	transform: scale(1.01);
 	border-image-slice: 1;
 	border-width: 2px;
 	border-image-source: var(--gradient);
 	box-shadow: 5px 5px 0px 0px #f7ff6e;
+	display:flex;
 }
 
 
@@ -809,6 +811,24 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 	.offcanvas-collapse {
 		top: 4.75rem; 
 	}
+	.choose2 .card {
+		padding: 10px;
+		border-radius: 0;
+		border: 2px solid white;
+		display: inline-block;
+		width:100%;
+		height:auto;
+	}
+	
+	.choose2 .card:hover {
+		border: 0px;
+		transform: scale(1.01);
+		border-image-slice: 1;
+		border-width: 2px;
+		border-image-source: var(--gradient);
+		display:flex;
+	}
+	
 
 	.navbar .logo-image img {
 		width: 100px;
