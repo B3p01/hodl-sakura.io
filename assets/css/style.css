@@ -23,7 +23,7 @@ Table Of Contents:
 :root {
 	--primary: transparent;
 	--primary-light: #212d37;
-	--secondary: #CA1414;
+	--secondary: #db0303;
 	--tertiary: #990606 ;
 	--gradient: linear-gradient(to right, #f7ff6e, #f95519);
 }
@@ -45,8 +45,8 @@ h6 {
 }
 
 @font-face {
-	font-family: samurai;
-	src: url(../webfonts/BLACKFIGHTER-SERIF.woff);
+	font-family: 'samurai';
+	src: url(../webfonts/BLACKFIGHTER.woff);
   }
 
 h1 {
@@ -61,8 +61,11 @@ button {
 p {
 	margin: 0;
 	padding: 0;
-	font-family: Open Sans Regular;
+	font-family: 'Open Sans';
 	font-size: 20px;
+}
+.nav-link {
+	font-family: 'Open Sans';
 }
 
 ul,
@@ -93,7 +96,6 @@ li {
 }
 
 .pg {
-	height: 100%;
 	position: relative;
 	background: var(--primary-light);
 	background-size: 100%;
@@ -159,24 +161,29 @@ li {
 .location .far,
 .location .fas {
 	padding: 15px 0;
-	background: -webkit-gradient(
+	background: #ffffff;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/*
+background: -webkit-gradient(
 		linear,
 		left top,
 		left bottom,
 		from(#CA1414),
 		to(#990606)
 	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	*/
+
+.navbar-nav a:hover {
+	color:#ffffff ;
 }
 
-
-.navbar-nav a:hover,
 .footer a:hover,
 .footer .fab:hover {
 	cursor: pointer;
-	background: var(--gradient);
+	background: var(#ffffff);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -282,20 +289,22 @@ li {
 }
 
 .navbar .fa-stack-2x {
-	background: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		from(#ffffff),
-		to(#CA1414)
-	);
+	background: #ffffff;
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	transition: all 0.2s ease;
 }
 
-
+/*
+background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#ffffff),
+		to(#CA1414)
+	);
+*/
 
 .navbar .fa-stack-1x {
 	color: #ffffff;
@@ -744,13 +753,13 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		box-shadow: none;
 		transition: all 0.2s;
 		padding-top: 1rem;
-		background-color:  var(--tertiary);
+		background-color:  var(--secondary);
 	}
 
 	.navbar.top-nav-collapse {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
-		background-color: var(--tertiary);
+		background-color: var(--secondary);
 		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
 	}
 
@@ -762,7 +771,7 @@ background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 		width: auto;
 		padding-right: 0;
 		padding-left: 0;
-		background-color: var(--tertiary);
+		background-color: var(--secondary);
 		overflow-y: visible;
 		visibility: visible;
 	}
