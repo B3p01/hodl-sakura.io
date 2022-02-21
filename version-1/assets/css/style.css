@@ -94,14 +94,8 @@ li {
 	height: 110vh;
 	position: relative;
 }
-.error{
-	height: 100%;
-	position: relative;
-	background: var(--primary-light);
-	background-size: 100%;
-}
 
-.pg{
+.pg {
 	position: relative;
 	background: var(--primary-light);
 	background-size: 100%;
