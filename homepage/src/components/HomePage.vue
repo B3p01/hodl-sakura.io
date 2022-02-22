@@ -1,54 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Sakura is a NFT play-to-earn experiment where we designed a deceptively easy decision-making strategy game. It’s a free-for-all rat race to complete the goal of the game first! " />
-        <meta name="keywords" content="NFT, Game" />
-        <meta name="author" content="cyntax.org" />
-        <meta property="og:site_name" content="" />
-        <meta property="og:site" content="" />
-        <meta property="og:title" content="" />
-        <meta property="og:description" content="" />
-        <meta property="og:image" content="" />
-        <meta property="og:url" content="" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <title>House of Delicate Leaves | Sakura Project</title>
-        <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="./assets/css/fontawesome-all.min.css" rel="stylesheet" />
-        <link href="./assets/css/aos.min.css" rel="stylesheet" />
-        <link href="./assets/css/swiper.css" rel="stylesheet" />
-        <link href="./assets/css/style.css" rel="stylesheet" />
-        <link rel="icon" href="./assets/images/favicon.png" />
-    </head>
-    <body>
-        <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
-            <div class="container">
-                <a class="navbar-brand logo-image" href="index.html"><img src="assets/images/HODL_Logo_White_no_Strap_70.png" /></a>
-                <!-- Text Logo - Use this if you don't have a graphic logo <a class="navbar-brand logo-text" href="index.html"><span class="home_text">House of Delicate Leaves</span></a>-->
-                <button class="navbar-toggler p-3 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                    <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#header">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#roadmap">ROADMAP</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#choose">CHOOSE</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">TEAM</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://play.hodl-sakura.io">DEMO</a></li>
-                    </ul>
-                    <span class="nav-item social-icons">
-                        <span class="fa-stack">
-                            <a href="https://discord.gg/uNKfc7pCyX"> <i class="fab fa-discord fa-stack-2x"></i> </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="https://twitter.com/Sakura_NFT_?t=poPtu1V1TANzv_5Iy-F4pA&s=09"> <i class="fab fa-twitter fa-stack-2x"></i> </a>
-                        </span>
-                    </span>
-                </div>
-            </div>
-        </nav>
-        <section class="home py-2 d-flex align-items-center" id="header">
+<template>
+  <section class="home py-2 d-flex align-items-center" id="header">
             <div class="container text-light py-5" data-aos="fade-right">
                 <!-- <a href="https://discord.gg/mja9arcq" class="p-2 fa-stack"><img src="assets/images/discord.png"></a> <a href="https://twitter.com/Sakura_NFT_?t=poPtu1V1TANzv_5Iy-F4pA&s=09" class="p-2 fa-stack"><img src="assets/images/twitter.png"></a>-->
                 <h1>
@@ -59,7 +10,7 @@
         </section>
         <section class="about d-flex align-items-center text-light py-5" id="about">
             <div class="container">
-                <div class="row d-flex align-items-center">
+                <div class="row d-flex align-items-center text-align-left">
                     <div class="col-lg-12 px-4" data-aos="fade-left">
                         <h1>ABOUT</h1>
                         <p class="py-2 para-light">
@@ -73,7 +24,7 @@
         <section class="work d-flex align-items-center px-3 py-5" id="roadmap">
             <div class="container-fluid text-light">
                 <div class="row">
-                    <div class="col-md-6 d-flex align-items-center" data-aos="fade-right"><img class="img-fluid" style="max-height: 110vh;" src="./assets/images/Samurai_2_Swords.png" alt="work" /></div>
+                    <div class="col-md-6 d-flex align-items-center" data-aos="fade-right"><img class="img-fluid" style="max-height: 110vh;" src="@/assets/images/Samurai_2_Swords.png" alt="work" /></div>
                     <div class="col-md-6 d-flex align-items-center" data-aos="fade-left">
                         <div class="text-center text-lg-start py-4 pt-lg-0" style="color: black;">
                             <h1 class="py-3 text-center">Prize Roadmap:</h1>
@@ -104,7 +55,7 @@
         <section class="choose2 d-flex align-items-center py-5">
             <div class="card-group">
                 <div class="card d-flex">
-                    <img class="card-img-top" src="./assets/images/Samurai_1000_1000.png" alt="Samurai" />
+                    <img class="card-img-top" src="@/assets/images/Samurai_1000_1000.png" alt="Samurai" />
                     <div class="card-body text-center">
                         <h5 class="card-title">Samurai</h5>
                         <p class="card-text">
@@ -114,7 +65,7 @@
                     </div>
                 </div>
                 <div class="card d-flex">
-                    <img class="card-img-top" src="./assets/images/Shinobi_1000x1000.png" alt="Shinobi" />
+                    <img class="card-img-top" src="@/assets/images/Shinobi_1000x1000.png" alt="Shinobi" />
                     <div class="card-body text-center">
                         <h5 class="card-title">Shinobi</h5>
                         <p class="card-text">
@@ -128,10 +79,10 @@
         <section id="team" class="team team_member section-padding py-4">
             <div class="section-title text-center"><h1>Team</h1></div>
             <div class="row text-center">
-                <a href="https://play.hodl-sakura.io" style="width: 1px; height: 1px;"><img src="assets/images/1x1.png" /></a>
+                <a href="https://play.hodl-sakura.io" style="width: 1px; height: 1px;"><img src="@/assets/images/1x1.png" /></a>
                 <div class="col wow fadeInUp py-3 px-3" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
                     <div class="our-team">
-                        <div class="team_img py-3 px-3"><img src="assets/images/Matt.png" alt="team-image" /></div>
+                        <div class="team_img py-3 px-3"><img src="@/assets/images/Matt.png" alt="team-image" /></div>
                         <div class="team-content py-3 px-3">
                             <h3 class="title">Matt Lopez</h3>
                             <span class="post">Founder</span>
@@ -140,7 +91,7 @@
                 </div>
                 <div class="col wow fadeInUp py-3 px-3" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="0">
                     <div class="our-team">
-                        <div class="team_img py-3 px-3"><img src="assets/images/Kris.png" alt="team-image" /></div>
+                        <div class="team_img py-3 px-3"><img src="@/assets/images/Kris.png" alt="team-image" /></div>
                         <div class="team-content py-3 px-3">
                             <h3 class="title">Kris Azbraitis</h3>
                             <span class="post">Writer</span>
@@ -149,7 +100,7 @@
                 </div>
                 <div class="col wow fadeInUp py-3 px-3" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
                     <div class="our-team">
-                        <div class="team_img py-3 px-3"><img src="assets/images/Hazey.png" alt="team-image" /></div>
+                        <div class="team_img py-3 px-3"><img src="@/assets/images/Hazey.png" alt="team-image" /></div>
                         <div class="team-content py-3 px-3">
                             <h3 class="title">Lucas Hayes</h3>
                             <span class="post">Project Manager</span>
@@ -160,7 +111,7 @@
             <div class="row text-center">
                 <div class="col wow fadeInUp py-3 px-3" data-wow-duration="1s" data-wow-delay="0.4s" data-wow-offset="0">
                     <div class="our-team">
-                        <div class="team_img py-3 px-3"><img src="assets/images/Lucky.png" alt="team-image" /></div>
+                        <div class="team_img py-3 px-3"><img src="@/assets/images/Lucky.png" alt="team-image" /></div>
                         <div class="team-content py-3 px-3">
                             <h3 class="title">Lucky</h3>
                             <span class="post">Lead Developer</span>
@@ -169,7 +120,7 @@
                 </div>
                 <div class="col wow fadeInUp py-3 px-3" data-wow-duration="1s" data-wow-delay="0.5s" data-wow-offset="0">
                     <div class="our-team">
-                        <div class="team_img py-3 px-3"><img src="assets/images/Stooch.png" alt="team-image" /></div>
+                        <div class="team_img py-3 px-3"><img src="@/assets/images/Stooch.png" alt="team-image" /></div>
                         <div class="team-content py-3 px-3">
                             <h3 class="title">Stooch</h3>
                             <span class="post">Creative</span>
@@ -181,7 +132,7 @@
         <section class="shinobi py-5 d-flex align-items-center"></section>
         <section class="faq d-flex align-items-center text-dark py-5" id="faq">
             <div class="container">
-                <div class="row d-flex align-items-center">
+                <div class="row d-flex align-items-center text-align-left">
                     <div class="col-lg-12 px-4" data-aos="fade-right">
                         <h1 class="text-light">FAQ</h1>
                         <h3>What is Sakura?</h3>
@@ -219,11 +170,459 @@
                 </div>
             </div>
         </section>
-        <button onclick="topFunction()" id="myBtn"><img src="assets/images/up-arrow.png" alt="alternative" /></button>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/purecounter.min.js"></script>
-        <script src="assets/js/swiper.min.js"></script>
-        <script src="assets/js/aos.js"></script>
-        <script src="assets/js/script.js"></script>
-    </body>
-</html>
+        <button onclick="topFunction()" id="myBtn"><img src="@/assets/images/up-arrow.png" alt="alternative" /></button>
+</template>
+
+<script>
+//import aos from './assets/js/aos'
+
+export default {
+  name: 'HomePage',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #fff;
+}
+li {
+  list-style-type: none;
+}
+.home,
+.services,
+.plans,
+.work,
+.team,
+.choose2 {
+	height: 110vh;
+	position: relative;
+}
+.pg {
+	position: relative;
+	background: var(--primary-light);
+	background-size: 100%;
+}
+.about {
+	height: 50vh;
+	position:relative;
+}
+.shinobi {
+	height: 80vh;
+	position: relative;
+}
+.choose {
+	height: 20vh;
+	position: relative;
+}
+.services,
+.work,
+.choose2,
+.testimonial,
+.footer {
+    background-color: var(--primary);
+}
+.faq {
+    background-color: var(--secondary);
+}
+.pg,
+.about,
+.choose,
+.plans,
+.company,
+.team,
+.newsletter,
+.location {
+  background-color: var(--primary-light);
+}
+.bottom {
+  background-color: black;
+}
+.team {
+	color:white;
+}
+.choose2 img {
+	width:100%;
+}
+.home_text,
+.home .fas,
+.plans .far,
+.information .fas,
+.work .fas,
+.services .fas,
+.location .far,
+.location .fas {
+	padding: 15px 0;
+	background: #ffffff;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.footer a:hover,
+.footer .fab:hover {
+	cursor: pointer;
+	background: var(#ffffff);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.home {
+	text-align: right;
+	background: url(@/assets/images/Header_Image_Final.png);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.home .fa-stack {
+	width: auto !important;
+	font-size: 0.75rem;
+	padding: 0px;
+	margin: 0px 0px 60px 0px;
+}
+.shinobi {
+	background: url(@/assets/images/Full_Width_Shinobi.png);
+	background-size: cover;
+	
+}
+
+.para {
+    width: 50%;
+}
+
+.para-light {
+    opacity: 0.7;
+}
+
+.information .container-fluid .row div:first-child {
+    background-color: var(--primary);
+}
+
+.information .container-fluid .row div:last-child {
+    background-color: white;
+}
+
+.information .container-fluid .row div:nth-child(2) {
+    background-color: var(--primary-light);
+}
+
+.btn {
+	color: white;
+	border-radius: 0;
+	border-width: 2px;
+	padding: 10px 30px;
+	border-image-slice: 1;
+	background-image: none;
+	background: transparent;
+	border-image-source: var(--gradient);
+	box-shadow: 5px 5px 0px 0px var(--secondary);
+}
+
+.btn:hover {
+	color: white;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 10px 30px;
+	transform: translate(5px, 5px);
+}
+
+.btn-secondary {
+	color: black;
+	border-width: 2px;
+	padding: 10px 30px;
+	border-image-slice: 1;
+	background-image: none;
+	background: transparent;
+	border-image-source: var(--gradient);
+}
+
+.btn-secondary:hover {
+	color: black;
+	padding: 10px 30px;
+	background-image: var(--gradient);
+}
+
+.btn-tertiary {
+	color: black;
+	border-radius: 0;
+	border-width: 2px;
+	padding: 10px 30px;
+	border-image-slice: 1;
+	background-image: none;
+	background: transparent;
+	border-image-source: var(--gradient);
+	box-shadow: 5px 5px 0px 0px var(--secondary);
+}
+
+.btn-tertiary:hover {
+	color: black;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 10px 30px;
+	transform: translate(5px, 5px);
+}
+
+.services .card {
+	padding: 20px;
+	border-radius: 0;
+	border: 2px solid white;
+}
+
+.services .card:hover {
+	border: 10px solid;
+	transform: scale(1.01);
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: var(--gradient);
+	box-shadow: 5px 5px 0px 0px #f7ff6e;
+}
+
+.choose2 .card {
+	padding: 20px;
+	border-radius: 0;
+	border: 2px solid white;
+	display:flex;
+}
+
+.choose2 .card:hover {
+	border: 0px;
+	transform: scale(1.01);
+	border-image-slice: 1;
+	border-width: 2px;
+	border-image-source: var(--gradient);
+	box-shadow: 5px 5px 0px 0px #CA1414;
+	display:flex;
+}
+
+.plans .card {
+	padding: 20px;
+	border: 2px solid white;
+}
+#myBtn {
+	z-index: 99;
+	right: 20px;
+	width: 52px;
+	height: 52px;
+	bottom: 20px;
+	border: none;
+	outline: none;
+	display: none;
+	position: fixed;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #323137;
+}
+
+#myBtn:hover {
+    background-color: #0f0f11;
+}
+
+#myBtn img {
+	width: 18px;
+	margin-left: 0.125rem;
+	margin-bottom: 0.25rem;
+}
+@media only screen and (max-width: 1024px) {
+	.home,
+	.about,
+	.pg,
+	.roadmap,
+	.choose,
+	.choose2,
+	.team,
+	.services,
+	.work,
+	.testimonial,
+	.plans {
+		height: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+
+	
+	
+	.slider-1 .swiper-container {
+		width: 92%;
+	}
+
+	.slider-1 .swiper-button-prev {
+		left: -16px;
+		width: 22px;
+		background-size: 22px 34px;
+	}
+
+	.slider-1 .swiper-button-next {
+		right: -16px;
+		width: 22px;
+		background-size: 22px 34px;
+	}
+
+	/* Navigation */
+	.navbar {
+		box-shadow: none;
+		transition: all 0.2s;
+		padding-top: 1rem;
+		background-color:  var(--secondary);
+	}
+
+	.navbar.top-nav-collapse {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		background-color: var(--secondary);
+		box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.025);
+	}
+
+	.offcanvas-collapse {
+		position: static;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		width: auto;
+		padding-right: 0;
+		padding-left: 0;
+		background-color: var(--secondary);
+		overflow-y: visible;
+		visibility: visible;
+	}
+
+
+
+	.offcanvas-collapse.open {
+		transform: none;
+	}
+
+	.navbar .navbar-nav {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.navbar .nav-item .nav-link {
+		padding-right: 0.75rem;
+		padding-left: 0.75rem;
+	}
+
+	.navbar .dropdown-menu {
+		padding-top: 0.75rem;
+		padding-bottom: 0.875rem;
+		box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.08);
+	}
+
+	.navbar .dropdown-divider {
+		width: 90%;
+	}
+
+	.navbar .social-icons {
+		margin-left: 0.5rem;
+	}
+
+	.navbar .fa-stack {
+		margin-right: 0;
+		margin-left: 0.25rem;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	body {
+		width: auto!important; 
+		overflow-x: hidden!important;
+		padding-top: 45px ;
+	}
+
+	.home {
+		height: 80vh;
+	}
+
+	.shinobi {
+		background: url(@/assets/images/med_width_shinobi.png);
+		background-position: center center;
+		background-size: cover;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+
+	body {padding-top: 20px ;}
+
+	.home{
+		background: url(@/assets/images/alt-banner.png);
+		background-position: center center;
+		background-size: cover;
+		text-align: center;
+		height: 850px;
+	}
+
+
+	.shinobi {
+		background: url(@/assets/images/small_shinobi.png);
+		background-position: center center;
+		background-size: cover;
+		text-align: center;
+	}
+
+	.offcanvas-collapse {
+		top: 4.75rem; 
+	}
+	.choose2 .card {
+		padding: 10px;
+		border-radius: 0;
+		border: 2px solid white;
+		display: inline-block;
+		width:100%;
+		height:auto;
+	}
+	
+	.choose2 .card:hover {
+		border: 0px;
+		transform: scale(1.01);
+		border-image-slice: 1;
+		border-width: 2px;
+		border-image-source: var(--gradient);
+		display:flex;
+	}
+	
+
+	.navbar .logo-image img {
+		width: 50px;
+		height: 50px;
+		padding: 0px 0px 0px 0px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	.para {
+		width: 100%;
+	}
+
+	.swiper-container {
+		width: 92%;
+	}
+
+	.swiper-button-prev {
+		left: -16px;
+		width: 22px;
+		background-size: 22px 34px;
+	}
+
+	.swiper-button-next {
+		right: -16px;
+		width: 22px;
+		background-size: 22px 34px;
+	}
+}
+</style>
