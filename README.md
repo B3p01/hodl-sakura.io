@@ -1,5 +1,5 @@
 # hodl-sakura.io
-Web application for story game
+Web application homepage for story game
 
 ## References
 
